@@ -4,6 +4,10 @@ import mac from './assets/mac.png'
 import exc from './assets/exc.png'
 import bg1 from './assets/bg1.png'
 import pl from './assets/pl.png'
+import bb from './assets/beans.png'
+import bb1 from './assets/bb1.png'
+import bb2 from './assets/bb2.png'
+import bb3 from './assets/bb3.png'
 export default function App() {
   return (
    <main>
@@ -16,7 +20,7 @@ export default function App() {
         </div>
         <img src={bg1}/>
       </section>
-      <section className="flex justify-evenly items-center flex-col w-full px h-170 px">
+      <section className="flex justify-evenly items-center flex-col w-full px h-[90vh]">
         <img src={pl} className='relative right-[40vw] top-10 '/>
         <h1 className="text-7xl text-[#603809] font-bold font-playfair">Enjoy a new blend of coffee style</h1>
         <p className="text-[#707070] font-light font-playfair text-lg">Explore all flavours of coffee with us. There is always a new cup worth experiencing</p>
@@ -53,7 +57,36 @@ export default function App() {
             <button className="bg-[#F9C06A] w-33 h-10  rounded-3xl font-bold relative top-5 left-19 font-playfair">Order Now</button>
           </div>
         </div>
-      </section>
+    </section>
+    <section className='flex flex-col items-center justify-evenly  w-full h-[65vh]'>
+      <h2 className='text-6xl text-[#603809] font-bold font-playfair'>Why are we different?</h2>
+      <p className='text-[#707070] font-light font-playfair text-xl'>We don’t just make your coffee, we make your day!</p>
+      <div className='flex justify-evenly w-[70vw]'>
+        <div className='w-[14vw] h-[30vh] bg-[#FFF9F1] flex flex-col justify-evenly items-center hover:bg-[#FFEED8] duration-300 ease-in-out'>
+          <img src={bb}/>
+          <p className='text-[#603809] text-2xl font-bold font-playfair'>Supreme Beans</p>
+          <p className='text-[#707070] text-lg font-playfair w-[10vw] text-center font-medium'>Beans that provides great taste</p>
+        </div>
+        <div className='w-[14vw] h-[30vh] bg-[#FFF9F1] flex flex-col justify-evenly items-center hover:bg-[#FFEED8] duration-300 ease-in-out'>
+          <img src={bb1}/>
+          <p className='text-[#603809] text-2xl font-bold font-playfair'>High Quality</p>
+          <p className='text-[#707070] text-lg font-playfair w-[10vw] text-center font-medium'>We provide the highest quality</p>
+        </div>
+        <div className='w-[14vw] h-[30vh] bg-[#FFF9F1] flex flex-col justify-evenly items-center hover:bg-[#FFEED8] duration-300 ease-in-out'>
+          <img src={bb2}/>
+          <p className='text-[#603809] text-2xl font-bold font-playfair'>Extraordinary </p>
+          <p className='text-[#707070] text-lg font-playfair w-[10vw] text-center font-medium'>Coffee like you have never tasted</p>
+        </div>
+        <div className='w-[14vw] h-[30vh] bg-[#FFF9F1] flex flex-col justify-evenly items-center hover:bg-[#FFEED8] duration-300 ease-in-out'>
+          <img src={bb3}/>
+          <p className='text-[#603809] text-2xl font-bold font-playfair'>Affordable Price</p>
+          <p className='text-[#707070] text-lg font-playfair w-[10vw] text-center font-medium'>Our Coffee prices are easy to afford</p>
+        </div>
+      </div>
+      <p className='text-[#707070] text-lg font-playfair'>Great ideas start with great coffee, Lets help you achieve that</p>
+      <p className='text-[#603809] text-3xl font-bold font-playfair'>Get started today.</p>
+      <button className="bg-[#F9C06A] w-33 h-10  rounded-3xl font-bold  font-playfair">Join Us</button>
+    </section>
    </main>
   );
 }
